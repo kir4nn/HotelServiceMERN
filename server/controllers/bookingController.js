@@ -180,8 +180,8 @@ const createBookings = asyncHandler(async(req,res) => {
     //OTP generation
     const generatedOTP = Math.floor(1000 + Math.random() * 9000);
     const twilio = require("twilio");
-    const accountSid = "AC03d8964bc1c8b8590ee621ba2fd311f4";
-    const authToken = "0cb96defc64f1f8bb75478df6eff0dee";
+    // const accountSid = "AC03d8964bc1c8b8590ee621ba2fd311f4";
+    // const authToken = "0cb96defc64f1f8bb75478df6eff0dee";
     const client = new twilio(accountSid,authToken);
     otpCache.set(phoneNumber, generatedOTP);
     try {
@@ -222,8 +222,8 @@ const createBookings = asyncHandler(async(req,res) => {
         //OTP generation
         const generatedOTP = Math.floor(1000 + Math.random() * 9000);
         const twilio = require("twilio");
-        const accountSid = "AC03d8964bc1c8b8590ee621ba2fd311f4";
-        const authToken = "0cb96defc64f1f8bb75478df6eff0dee";
+        // const accountSid = "AC03d8964bc1c8b8590ee621ba2fd311f4";
+        // const authToken = "0cb96defc64f1f8bb75478df6eff0dee";
         const client = new twilio(accountSid,authToken);
         console.log("Generated OTP:", generatedOTP);
 
@@ -274,8 +274,8 @@ const createConfFine= asyncHandler(async(req,res) => {
     //OTP generation
     const generatedOTP = Math.floor(1000 + Math.random() * 9000);
     const twilio = require("twilio");
-    const accountSid = "AC03d8964bc1c8b8590ee621ba2fd311f4";
-    const authToken = "0cb96defc64f1f8bb75478df6eff0dee";
+    // const accountSid = "AC03d8964bc1c8b8590ee621ba2fd311f4";
+    // const authToken = "0cb96defc64f1f8bb75478df6eff0dee";
     const client = new twilio(accountSid,authToken);
     otpCache.set(phoneNumber,generatedOTP);
     try {
